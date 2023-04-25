@@ -1,0 +1,31 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    margin:3rem;
+}
+
+.github {
+    display: inline-block;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/github.png");
+    background-size: contain;
+    }
+    
+.google {
+    display: inline-block;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/google.png");
+    background-size: contain;
+    }
+
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,4 @@
+Django==4.1.7
+django-crispy-forms
+crispy-bootstrap5
+django-allauth
