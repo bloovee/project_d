@@ -86,7 +86,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-#DATABASES -> moved to each file
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -156,16 +161,6 @@ ACCOUNT_UNIQUE_USERNAME = False
 
 #Add the following when you are using custom user model
 #ACCOUNT_USER_MODEL_USERNAME_FIELD = None
-
-#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
-#EMAIL_HOST = 'smtp.gmail.com'
-#EMAIL_HOST_USER = 'test.photomania@gmail.com'
-#EMAIL_HOST_PASSWORD = 'alaahckravshafss'
-#EMAIL_PORT = 465
-#EMAIL_USE_TLS = False
-#EMAIL_USE_SSL = True
-#fDEFAULT_FROM_EMAIL = 'test.photomania@gmail.com'
 
 ###Social Login###
 SOCIALACCOUNT_PROVIDERS = {
