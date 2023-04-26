@@ -24,14 +24,9 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-a6e%75-^!e7op7&fb0s6tkh5^h&35ya2q(zcaq13klv!b)#0#9'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = ["localhost", "192.168.86.102"]
-#ALLOWED_HOSTS = []
+# SECRET_KEY -> moved to each file
+# DEBUG -> -> moved to each file
+# ALLOWED_HOSTS -> moved to each file
 
 # Application definition
 
@@ -42,11 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #own apps
+    #Own apps
     'test_app',
     'employee_learning',
     'user_profile',
-    #libraries
+    #Libraries
     'crispy_forms',
     'crispy_bootstrap5',
     'django.contrib.sites',
@@ -91,13 +86,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
+#DATABASES -> moved to each file
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -168,15 +157,15 @@ ACCOUNT_UNIQUE_USERNAME = False
 #Add the following when you are using custom user model
 #ACCOUNT_USER_MODEL_USERNAME_FIELD = None
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'test.photomania@gmail.com'
-EMAIL_HOST_PASSWORD = 'alaahckravshafss'
-EMAIL_PORT = 465
-EMAIL_USE_TLS = False
-EMAIL_USE_SSL = True
-DEFAULT_FROM_EMAIL = 'test.photomania@gmail.com'
+#EMAIL_HOST = 'smtp.gmail.com'
+#EMAIL_HOST_USER = 'test.photomania@gmail.com'
+#EMAIL_HOST_PASSWORD = 'alaahckravshafss'
+#EMAIL_PORT = 465
+#EMAIL_USE_TLS = False
+#EMAIL_USE_SSL = True
+#fDEFAULT_FROM_EMAIL = 'test.photomania@gmail.com'
 
 ###Social Login###
 SOCIALACCOUNT_PROVIDERS = {
