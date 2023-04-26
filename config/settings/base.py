@@ -24,9 +24,9 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
-# SECRET_KEY -> moved to each file
-# DEBUG -> -> moved to each file
-# ALLOWED_HOSTS -> moved to each file
+# SECRET_KEY -> moved to each setting file
+# DEBUG -> moved to each setting file
+# ALLOWED_HOSTS -> moved to each setting file
 
 # Application definition
 
@@ -86,12 +86,8 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES -> moved to each setting file 
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
